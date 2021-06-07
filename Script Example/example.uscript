@@ -31,7 +31,7 @@ command settext(key, childName, text){
 }
 
 command setvisible(key, childName, isVisible){
-	permission = "settext";
+	permission = "setvisible";
 	allowedCaller = "player";
 	execute(){
 		EffectManagerExtended.setVisibility(player.id, key.toNumber(), childName.toString(), isVisible.toString());
