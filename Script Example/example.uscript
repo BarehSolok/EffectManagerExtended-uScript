@@ -1,0 +1,39 @@
+command enableui(id){
+	permission = "enableui";
+	allowedCaller = "player";
+	execute(){
+		effectManager.sendUI(id.toNumber(), id.toNumber(), player.id);
+	}
+}
+
+command clearui(id){
+	permission = "clearui";
+	allowedCaller = "player";
+	execute(){
+		effectManager.clearUIById(id.toNumber(), player.id);
+	}
+}
+
+command setimage(key, childName, imageUrl){
+	permission = "setimage";
+	allowedCaller = "player";
+	execute(){
+		EffectManagerExtended.setImage(player.id, key.toNumber(), childName.toString(), imageUrl.toString());
+	}
+}
+
+command settext(key, childName, text){
+	permission = "settext";
+	allowedCaller = "player";
+	execute(){
+		EffectManagerExtended.setText(player.id, key.toNumber(), childName.toString(), text.toString());
+	}
+}
+
+command setvisible(key, childName, isVisible){
+	permission = "settext";
+	allowedCaller = "player";
+	execute(){
+		EffectManagerExtended.setVisibility(player.id, key.toNumber(), childName.toString(), isVisible.toString());
+	}
+}

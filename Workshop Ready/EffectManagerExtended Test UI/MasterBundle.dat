@@ -1,0 +1,6 @@
+// Name of asset bundle file in the same directory as MasterBundle.dat.
+Asset_Bundle_Name effectmanagerextendedtestui
+
+// Path to the asset bundle within Unity.
+// Unity subfolders should match 1:1 with dat subfolders.
+Asset_Prefix Assets/Bundles/EffectManagerExtended Test UI
